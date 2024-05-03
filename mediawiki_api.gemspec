@@ -30,7 +30,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'faraday-retry'
   spec.add_runtime_dependency 'faraday-cookie_jar'
   spec.add_runtime_dependency 'faraday-follow_redirects'
-
+  spec.add_runtime_dependency 'faraday-encoding'
 
   # Most developer dependencies can float to latest, but stick to RSpec 3
   # since that would likely introduce breaking changes (bundler, rubocop
