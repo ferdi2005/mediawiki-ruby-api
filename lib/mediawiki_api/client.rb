@@ -2,7 +2,6 @@ require 'faraday'
 require 'faraday/multipart'
 require 'faraday-cookie_jar'
 require 'faraday/follow_redirects'
-require 'faraday/encoding'
 
 require 'json'
 
@@ -28,7 +27,6 @@ module MediawikiApi
         faraday.response :logger if log
         faraday.use :cookie_jar, jar: @cookies
         faraday.response :follow_redirects
-        faraday.response :encoding
         faraday.adapter Faraday.default_adapter
       end
 
